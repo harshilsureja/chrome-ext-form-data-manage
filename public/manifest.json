@@ -1,15 +1,17 @@
 {
   "manifest_version": 3,
-  "name": "Form Data Manager",
+  "name": "Open Autofill – Form Filler & Saver",
+  "short_name": "Open Autofill",
   "version": "1.0.0",
-  "description": "Auto-fill forms, save forms with their field data and URL, re-fill them in one click, and browse your full form history.",
+  "description": "Autofill forms, generate realistic test data, save filled forms and replay them in one click. 100% local.",
+  "homepage_url": "https://harshil-at.github.io/chrome-ext-form-data-manage/",
   "permissions": ["sidePanel", "storage", "tabs", "scripting", "activeTab"],
   "host_permissions": ["<all_urls>"],
   "background": {
     "service_worker": "background.js"
   },
   "action": {
-    "default_title": "Open Form Data Manager",
+    "default_title": "Open Autofill",
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",

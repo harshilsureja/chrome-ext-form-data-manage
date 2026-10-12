@@ -35,8 +35,8 @@ export default function App() {
             <div className="flex items-center gap-2.5">
               <img src={logoUrl} alt="" className="size-9 drop-shadow-sm" />
               <div className="leading-tight">
-                <p className="font-semibold">Form Data Manager</p>
-                <p className="text-muted-foreground text-xs">Autofill · Save · History</p>
+                <p className="font-semibold">Open Autofill</p>
+                <p className="text-muted-foreground text-xs">Fill · Save · Replay</p>
               </div>
             </div>
             <Button

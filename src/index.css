@@ -85,5 +85,11 @@
   }
   body {
     @apply bg-background text-foreground text-sm antialiased;
+    overflow-x: hidden;
+  }
+  /* Grid items default to min-width:auto, so long nowrap text (titles, URLs)
+     would stretch the panel instead of truncating. */
+  .grid > * {
+    min-width: 0;
   }
 }

@@ -1,0 +1,398 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Autofill — Fill any form in one click</title>
+    <meta
+      name="description"
+      content="Open Autofill is a free, open-source Chrome extension that autofills forms, generates realistic test data, and saves & replays filled forms. 100% local."
+    />
+    <meta name="theme-color" content="#09090b" />
+    <meta property="og:title" content="Open Autofill — Fill any form in one click" />
+    <meta property="og:description" content="Autofill, realistic test data, and save & replay for every form. Open source. 100% local." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/screens/saved-dark.png" />
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&family=Geist+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <!-- ================= NAV ================= -->
+    <header class="nav">
+      <div class="container nav-inner">
+        <a href="#" class="brand">
+          <img src="assets/logo.svg" alt="" width="28" height="28" />
+          <span>Open Autofill</span>
+        </a>
+        <nav class="nav-links">
+          <a href="#features">Features</a>
+          <a href="#screens">Screens</a>
+          <a href="#usage">Usage</a>
+          <a href="#install">Install</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+        <a class="btn btn-ghost btn-sm" href="https://github.com/harshil-at/chrome-ext-form-data-manage" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5a11.5 11.5 0 0 0-3.64 22.42c.58.1.79-.25.79-.56v-2c-3.2.7-3.88-1.37-3.88-1.37-.53-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.71 1.26 3.37.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.25.45-2.28 1.19-3.08-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.8 1.19 1.83 1.19 3.08 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 12 .5Z"/></svg>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO ================= -->
+      <section class="hero container">
+        <a class="pill reveal" href="https://github.com/harshil-at/chrome-ext-form-data-manage/releases" target="_blank" rel="noopener">
+          <span class="pill-dot"></span> v1.0 · Open source · MIT
+          <svg class="icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 18 6-6-6-6"/></svg>
+        </a>
+        <h1 class="reveal" style="--d: 80ms">
+          Fill any form<br />
+          <span class="gradient-text">in one click.</span>
+        </h1>
+        <p class="lead reveal" style="--d: 160ms">
+          A free Chrome extension that autofills forms, generates realistic test data, and saves &amp; replays filled forms — right from Chrome's
+          side panel. Built for developers and QA who are tired of typing the same thing twice.
+        </p>
+        <div class="hero-cta reveal" style="--d: 240ms">
+          <a class="btn btn-primary" href="#install">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3m0 12-4-4m4 4 4-4M2 17l.62 2.48A2 2 0 0 0 4.56 21h14.88a2 2 0 0 0 1.94-1.51L22 17"/></svg>
+            Install the extension
+          </a>
+          <a class="btn btn-outline" href="https://github.com/harshil-at/chrome-ext-form-data-manage" target="_blank" rel="noopener">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11.48 3.5a.56.56 0 0 1 1.04 0l2.13 5.11a.56.56 0 0 0 .48.35l5.52.44c.5.04.7.66.32.99l-4.2 3.6a.56.56 0 0 0-.19.56l1.29 5.38a.56.56 0 0 1-.84.61l-4.73-2.88a.56.56 0 0 0-.58 0l-4.73 2.88a.56.56 0 0 1-.84-.61l1.29-5.38a.56.56 0 0 0-.19-.56l-4.2-3.6a.56.56 0 0 1 .32-.99l5.52-.44a.56.56 0 0 0 .48-.35z"/></svg>
+            Star on GitHub
+          </a>
+        </div>
+        <p class="hero-meta reveal" style="--d: 320ms">
+          <span>Chrome</span><span>Edge</span><span>Brave</span><span>Manifest V3</span><span>No account</span>
+        </p>
+
+        <!-- Animated product demo -->
+        <div class="demo reveal" style="--d: 400ms" aria-label="Animated demo of Open Autofill filling a checkout form">
+          <div class="window">
+            <div class="window-bar">
+              <span class="dots"><i></i><i></i><i></i></span>
+              <div class="url">
+                <svg class="icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>
+                localhost:3000/checkout
+              </div>
+              <img class="ext-icon" src="assets/logo.svg" alt="" />
+            </div>
+            <div class="window-body">
+              <!-- Page form -->
+              <div class="page">
+                <div class="page-head">
+                  <div class="skel w-40"></div>
+                  <h3>Shipping details</h3>
+                  <p>Where should we send your order?</p>
+                </div>
+                <div class="form-grid">
+                  <label><span>First name</span><div class="input" data-fill="Sophia"></div></label>
+                  <label><span>Last name</span><div class="input" data-fill="Lewis"></div></label>
+                  <label class="span-2"><span>Email</span><div class="input" data-fill="sophia.lewis@example.org"></div></label>
+                  <label><span>Phone</span><div class="input" data-fill="(617) 555-0142"></div></label>
+                  <label><span>City</span><div class="input" data-fill="Boston"></div></label>
+                  <label class="span-2"><span>Country</span><div class="input select" data-fill="United States"></div></label>
+                  <label class="check span-2"><div class="checkbox" data-fill="check"></div><span>Save this address</span></label>
+                </div>
+                <div class="fake-btn">Continue to payment</div>
+              </div>
+
+              <!-- Side panel replica -->
+              <aside class="panel">
+                <div class="panel-head">
+                  <img src="assets/logo.svg" alt="" />
+                  <div><b>Open Autofill</b><small>Fill · Save · Replay</small></div>
+                </div>
+                <div class="panel-tabs"><span class="on">Page</span><span>Saved</span><span>History</span></div>
+                <div class="panel-card">
+                  <div class="p-btn primary" id="demo-autofill">⚡ Autofill profile</div>
+                  <div class="p-row">
+                    <div class="p-btn">Save form</div>
+                    <div class="p-btn">🎲 Generate</div>
+                  </div>
+                </div>
+                <div class="panel-label">Saved for this page</div>
+                <div class="panel-item">
+                  <div class="avatar">C</div>
+                  <div><b>Checkout — Shipping</b><small>12 fields · used 14×</small></div>
+                </div>
+                <div class="panel-item muted">
+                  <div class="avatar">S</div>
+                  <div><b>Sign up — QA account</b><small>8 fields · 5h ago</small></div>
+                </div>
+                <div class="toast" id="demo-toast">
+                  <svg class="icon icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6 9 17l-5-5"/></svg>
+                  Filled 7/7 fields
+                </div>
+              </aside>
+              <div class="cursor" id="demo-cursor" aria-hidden="true">
+                <svg viewBox="0 0 24 24"><path d="M5 3l14 8-6 1.5L10 19z" fill="#fff" stroke="#09090b" stroke-width="1.5" stroke-linejoin="round"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= STATS ================= -->
+      <section class="container stats">
+        <div class="stat reveal"><b>100%</b><span>local storage</span></div>
+        <div class="stat reveal" style="--d: 80ms"><b>0</b><span>trackers or accounts</span></div>
+        <div class="stat reveal" style="--d: 160ms"><b>1 click</b><span>to replay a form</span></div>
+        <div class="stat reveal" style="--d: 240ms"><b>MIT</b><span>licensed, forever free</span></div>
+      </section>
+
+      <!-- ================= FEATURES ================= -->
+      <section id="features" class="container section">
+        <div class="section-head reveal">
+          <span class="eyebrow">Features</span>
+          <h2>Everything a form needs.<br /><span class="dim">Nothing it doesn't.</span></h2>
+        </div>
+        <div class="features">
+          <article class="feature reveal">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9z"/></svg></div>
+            <h3>Profile autofill</h3>
+            <p>Store your details once. It matches fields by <code>autocomplete</code>, name, id, label and placeholder.</p>
+          </article>
+          <article class="feature reveal" style="--d: 60ms">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="3"/><circle cx="8.5" cy="8.5" r="1.2"/><circle cx="15.5" cy="15.5" r="1.2"/><circle cx="15.5" cy="8.5" r="1.2"/><circle cx="8.5" cy="15.5" r="1.2"/></svg></div>
+            <h3>Realistic test data</h3>
+            <p>One click fills every field with a believable person. Use the offline generator or <code>randomuser.me</code> by nationality.</p>
+          </article>
+          <article class="feature reveal" style="--d: 120ms">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><path d="M17 21v-8H7v8M7 3v5h8"/></svg></div>
+            <h3>Save &amp; replay</h3>
+            <p>Save a filled form with its URL. Hit <b>Fill</b> later — the extension navigates there and restores every value.</p>
+          </article>
+          <article class="feature reveal" style="--d: 180ms">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M21 12a9 9 0 1 1-3-6.7L21 8"/><path d="M21 3v5h-5"/></svg></div>
+            <h3>Auto-fill on load</h3>
+            <p>Flip a switch and a saved form fills itself whenever that page opens. Perfect for repetitive QA flows.</p>
+          </article>
+          <article class="feature reveal">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M3 12a9 9 0 1 0 3-6.7L3 8"/><path d="M3 3v5h5M12 7v5l4 2"/></svg></div>
+            <h3>Full history</h3>
+            <p>Every submit, save, fill and generation is logged. Search values, filter by action, re-fill or save any entry.</p>
+          </article>
+          <article class="feature reveal" style="--d: 60ms">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M15 3v18"/></svg></div>
+            <h3>Per-tab side panel</h3>
+            <p>Opens in Chrome's native side panel, only on the tab you clicked. No popups that vanish when you click away.</p>
+          </article>
+          <article class="feature reveal" style="--d: 120ms">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><path d="m16 18 6-6-6-6M8 6l-6 6 6 6"/></svg></div>
+            <h3>Framework friendly</h3>
+            <p>Uses native value setters and dispatches real events, so React, Vue, Angular and Svelte forms pick up every change.</p>
+          </article>
+          <article class="feature reveal" style="--d: 180ms">
+            <div class="f-icon"><svg viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></div>
+            <h3>Private by design</h3>
+            <p>All data lives in <code>chrome.storage.local</code>. Passwords, hidden and file inputs are never captured.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ================= SCREENS ================= -->
+      <section id="screens" class="section screens-section">
+        <div class="container">
+          <div class="section-head reveal">
+            <span class="eyebrow">Screens</span>
+            <h2>A side panel that feels native.</h2>
+            <p class="section-sub">Built with React and shadcn/ui. Light and dark themes included.</p>
+          </div>
+          <div class="screen-tabs reveal" role="tablist">
+            <button class="active" data-screen="0">Page</button>
+            <button data-screen="1">Saved</button>
+            <button data-screen="2">History</button>
+            <button data-screen="3">Profile</button>
+            <button data-screen="4">Settings</button>
+          </div>
+          <div class="screens reveal">
+            <figure class="phone side left"><img src="assets/screens/saved-dark.png" alt="Saved forms, dark theme" loading="lazy" /></figure>
+            <figure class="phone main">
+              <img class="active" src="assets/screens/page-light.png" alt="Page tab: autofill, save, generate" />
+              <img src="assets/screens/saved-light.png" alt="Saved forms with fill, edit and auto-fill switch" loading="lazy" />
+              <img src="assets/screens/history-dark.png" alt="History of submitted, generated and filled forms" loading="lazy" />
+              <img src="assets/screens/profile-light.png" alt="Autofill profile editor" loading="lazy" />
+              <img src="assets/screens/settings-dark.png" alt="Settings: history, random data source, export" loading="lazy" />
+            </figure>
+            <figure class="phone side right"><img src="assets/screens/history-dark.png" alt="History, dark theme" loading="lazy" /></figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= USAGE ================= -->
+      <section id="usage" class="container section">
+        <div class="section-head reveal">
+          <span class="eyebrow">How to use</span>
+          <h2>Four steps. Zero retyping.</h2>
+        </div>
+        <ol class="steps">
+          <li class="step reveal">
+            <span class="step-n">01</span>
+            <div>
+              <h3>Open the panel</h3>
+              <p>Click the extension icon in the toolbar. The side panel opens for that tab only. Pin the icon for quick access.</p>
+            </div>
+          </li>
+          <li class="step reveal" style="--d: 80ms">
+            <span class="step-n">02</span>
+            <div>
+              <h3>Fill — your way</h3>
+              <p>Press <kbd>Autofill profile</kbd> to use your saved details, or <kbd>Auto-generate</kbd> for fresh, realistic test data.</p>
+            </div>
+          </li>
+          <li class="step reveal" style="--d: 160ms">
+            <span class="step-n">03</span>
+            <div>
+              <h3>Save the form</h3>
+              <p>Happy with the values? Click <kbd>Save form</kbd>, give it a name, and optionally enable auto-fill for that URL.</p>
+            </div>
+          </li>
+          <li class="step reveal" style="--d: 240ms">
+            <span class="step-n">04</span>
+            <div>
+              <h3>Replay anytime</h3>
+              <p>From <b>Saved</b> or <b>History</b>, hit <kbd>Fill</kbd>. It opens the URL if needed and restores every field.</p>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ================= INSTALL ================= -->
+      <section id="install" class="container section">
+        <div class="section-head reveal">
+          <span class="eyebrow">Install</span>
+          <h2>Up and running in a minute.</h2>
+          <p class="section-sub">Pick a prebuilt release, or build it yourself from source.</p>
+        </div>
+
+        <div class="install reveal">
+          <div class="install-tabs" role="tablist">
+            <button class="active" data-install="release">Download release</button>
+            <button data-install="source">Build from source</button>
+          </div>
+
+          <div class="install-pane active" data-pane="release">
+            <ol class="install-steps">
+              <li>
+                Download <code>open-autofill-vX.Y.Z.zip</code> from the
+                <a href="https://github.com/harshil-at/chrome-ext-form-data-manage/releases/latest" target="_blank" rel="noopener">latest release</a>
+                and unzip it.
+              </li>
+              <li>Open <code>chrome://extensions</code> and switch on <b>Developer mode</b> (top-right).</li>
+              <li>Click <b>Load unpacked</b> and select the unzipped folder.</li>
+              <li>Pin the extension from the puzzle-piece menu, then click it on any page.</li>
+            </ol>
+          </div>
+
+          <div class="install-pane" data-pane="source">
+            <div class="terminal">
+              <div class="terminal-bar"><span class="dots"><i></i><i></i><i></i></span><span>bash</span></div>
+              <div class="code-line"><span class="prompt">$</span><code>git clone https://github.com/harshil-at/chrome-ext-form-data-manage.git</code><button class="copy" aria-label="Copy">Copy</button></div>
+              <div class="code-line"><span class="prompt">$</span><code>cd chrome-ext-form-data-manage</code><button class="copy" aria-label="Copy">Copy</button></div>
+              <div class="code-line"><span class="prompt">$</span><code>npm install</code><button class="copy" aria-label="Copy">Copy</button></div>
+              <div class="code-line"><span class="prompt">$</span><code>npm run build</code><button class="copy" aria-label="Copy">Copy</button></div>
+              <div class="code-out">✓ built in 1.2s → dist/</div>
+            </div>
+            <p class="install-note">
+              Then open <code>chrome://extensions</code>, enable <b>Developer mode</b>, click <b>Load unpacked</b> and choose the
+              <code>dist/</code> folder. Use <code>npm run dev</code> to rebuild on save.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= DEV ================= -->
+      <section class="container section dev">
+        <div class="dev-copy reveal">
+          <span class="eyebrow">For developers</span>
+          <h2>Small, readable, hackable.</h2>
+          <p class="section-sub">
+            A modern stack with no magic. The content script is plain JavaScript; the side panel is a typed React app.
+            PRs welcome.
+          </p>
+          <div class="chips">
+            <span>React 19</span><span>TypeScript</span><span>Tailwind v4</span><span>shadcn/ui</span><span>Vite</span><span>Manifest V3</span>
+          </div>
+        </div>
+        <pre class="tree reveal" style="--d: 120ms"><code><span class="t-dir">open-autofill/</span>
+├─ <span class="t-dir">public/</span>          <span class="t-c"># copied as-is into dist/</span>
+│  ├─ manifest.json
+│  ├─ background.js   <span class="t-c"># per-tab side panel + history</span>
+│  ├─ content.js      <span class="t-c"># capture, fill, autofill, generate</span>
+│  └─ faker.js        <span class="t-c"># offline test-data generator</span>
+├─ <span class="t-dir">src/</span>             <span class="t-c"># React side panel</span>
+│  ├─ components/     <span class="t-c"># tabs, cards, dialogs, ui/</span>
+│  ├─ hooks/          <span class="t-c"># storage + tab sync</span>
+│  └─ lib/            <span class="t-c"># chrome plumbing, actions</span>
+└─ <span class="t-dir">docs/</span>            <span class="t-c"># this website</span></code></pre>
+      </section>
+
+      <!-- ================= FAQ ================= -->
+      <section id="faq" class="container section faq-section">
+        <div class="section-head reveal">
+          <span class="eyebrow">FAQ</span>
+          <h2>Questions, answered.</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal">
+            <summary>Is any of my data sent to a server?</summary>
+            <p>No. Profiles, saved forms and history live in <code>chrome.storage.local</code> on your machine. The only network request is the optional <code>randomuser.me</code> data source, which sends nothing about you.</p>
+          </details>
+          <details class="reveal">
+            <summary>Does it store passwords?</summary>
+            <p>Never. Password, hidden and file inputs are skipped when capturing and filling.</p>
+          </details>
+          <details class="reveal">
+            <summary>Why does it need access to all sites?</summary>
+            <p>To read and fill forms on whatever page you open the panel on, and to auto-fill saved forms when their URL loads. The extension only acts when you click or when you enabled auto-fill for a URL.</p>
+          </details>
+          <details class="reveal">
+            <summary>Which browsers are supported?</summary>
+            <p>Any Chromium browser with side panel support (Chrome 116+, Edge, Brave, Arc, Opera).</p>
+          </details>
+          <details class="reveal">
+            <summary>Does it work with React / Vue / Angular forms?</summary>
+            <p>Yes. Values are set through native setters and real <code>input</code>/<code>change</code> events are dispatched, so controlled components update correctly.</p>
+          </details>
+          <details class="reveal">
+            <summary>How do I back up or move my data?</summary>
+            <p>Settings → <b>Export JSON</b>. Import the file on another machine with <b>Import JSON</b> — entries are merged, not overwritten.</p>
+          </details>
+        </div>
+      </section>
+
+      <!-- ================= CTA ================= -->
+      <section class="container cta reveal">
+        <img src="assets/logo.svg" alt="" width="56" height="56" />
+        <h2>Stop retyping. Start shipping.</h2>
+        <p>Free and open source. Install in under a minute.</p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#install">Install the extension</a>
+          <a class="btn btn-outline" href="https://github.com/harshil-at/chrome-ext-form-data-manage" target="_blank" rel="noopener">View source</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <div class="brand small"><img src="assets/logo.svg" alt="" width="20" height="20" /><span>Open Autofill</span></div>
+        <p>MIT License · Made for people who fill forms for a living.</p>
+        <div class="footer-links">
+          <a href="https://github.com/harshil-at/chrome-ext-form-data-manage" target="_blank" rel="noopener">GitHub</a>
+          <a href="https://github.com/harshil-at/chrome-ext-form-data-manage/issues" target="_blank" rel="noopener">Issues</a>
+          <a href="https://github.com/harshil-at/chrome-ext-form-data-manage/blob/main/PRIVACY.md" target="_blank" rel="noopener">Privacy</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

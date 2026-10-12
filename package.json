@@ -1,13 +1,13 @@
 {
-  "name": "form-data-manager",
-  "private": true,
+  "name": "open-autofill",
   "version": "1.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite build --watch --mode development",
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
-    "icons": "node scripts/build-icons.mjs"
+    "icons": "node scripts/build-icons.mjs",
+    "zip": "npm run build && node scripts/zip.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
@@ -26,10 +26,19 @@
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
     "@vitejs/plugin-react": "^6.1.2",
+    "adm-zip": "^0.6.1",
     "sharp": "^0.35.5",
     "tailwindcss": "^4.3.3",
     "tw-animate-css": "^1.4.0",
     "typescript": "^7.0.2",
     "vite": "^8.3.4"
-  }
+  },
+  "description": "Chrome side-panel extension to autofill forms, generate test data, and save & replay filled forms.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/harshil-at/chrome-ext-form-data-manage.git"
+  },
+  "homepage": "https://harshil-at.github.io/chrome-ext-form-data-manage/",
+  "private": true
 }

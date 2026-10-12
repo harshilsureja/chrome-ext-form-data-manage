@@ -43,12 +43,12 @@ export function SettingsTab({ store }: { store: Store }) {
 
   async function exportData() {
     const data = await readStore();
-    const blob = new Blob([JSON.stringify({ app: 'form-data-manager', version: 1, ...data }, null, 2)], {
+    const blob = new Blob([JSON.stringify({ app: 'open-autofill', version: 1, ...data }, null, 2)], {
       type: 'application/json',
     });
     const a = document.createElement('a');
     a.href = URL.createObjectURL(blob);
-    a.download = `form-data-manager-${new Date().toISOString().slice(0, 10)}.json`;
+    a.download = `open-autofill-backup-${new Date().toISOString().slice(0, 10)}.json`;
     a.click();
     URL.revokeObjectURL(a.href);
   }

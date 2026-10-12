@@ -1,2 +1,11 @@
 node_modules
 dist
+release
+
+# Extension signing keys and packed builds — never commit these.
+*.pem
+*.crx
+*.zip
+
+.DS_Store
+Thumbs.db
