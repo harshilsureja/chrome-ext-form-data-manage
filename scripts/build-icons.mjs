@@ -22,3 +22,12 @@ for (const [size, file] of sizes) {
     .toFile(path.join(out, `icon${size}.png`));
   console.log(`icon${size}.png  ←  ${file}`);
 }
+
+// High-resolution logo PNGs for docs, store listings, social posts, etc.
+for (const size of [256, 512, 1024]) {
+  await sharp(path.join(root, 'assets', 'logo.svg'), { density: 72 * (size / 128) * 2 })
+    .resize(size, size)
+    .png()
+    .toFile(path.join(root, 'assets', `logo-${size}.png`));
+  console.log(`assets/logo-${size}.png`);
+}
