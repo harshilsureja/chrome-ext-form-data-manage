@@ -4,7 +4,7 @@
   "short_name": "Open Autofill",
   "version": "1.0.0",
   "description": "Autofill forms, generate realistic test data, save filled forms and replay them in one click. 100% local.",
-  "homepage_url": "https://harshil-at.github.io/chrome-ext-form-data-manage/",
+  "homepage_url": "https://harshilsureja.github.io/open-autofill/",
   "permissions": ["sidePanel", "storage", "tabs", "scripting", "activeTab"],
   "host_permissions": ["<all_urls>"],
   "background": {

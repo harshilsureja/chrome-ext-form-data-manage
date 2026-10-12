@@ -8,14 +8,14 @@
 
 Autofill forms, generate realistic test data, and save & replay filled forms — right from Chrome's side panel.
 
-[![CI](https://github.com/harshil-at/chrome-ext-form-data-manage/actions/workflows/ci.yml/badge.svg)](https://github.com/harshil-at/chrome-ext-form-data-manage/actions/workflows/ci.yml)
-[![Release](https://img.shields.io/github/v/release/harshil-at/chrome-ext-form-data-manage?color=8b5cf6)](https://github.com/harshil-at/chrome-ext-form-data-manage/releases/latest)
+[![CI](https://github.com/harshilsureja/open-autofill/actions/workflows/ci.yml/badge.svg)](https://github.com/harshilsureja/open-autofill/actions/workflows/ci.yml)
+[![Release](https://img.shields.io/github/v/release/harshilsureja/open-autofill?color=8b5cf6)](https://github.com/harshilsureja/open-autofill/releases/latest)
 [![License: MIT](https://img.shields.io/badge/license-MIT-18181b.svg)](LICENSE)
 ![Manifest V3](https://img.shields.io/badge/Manifest-V3-6366f1)
 
-[**Website**](https://harshil-at.github.io/chrome-ext-form-data-manage/) ·
-[**Download**](https://github.com/harshil-at/chrome-ext-form-data-manage/releases/latest) ·
-[**Report a bug**](https://github.com/harshil-at/chrome-ext-form-data-manage/issues/new?template=bug_report.md)
+[**Website**](https://harshilsureja.github.io/open-autofill/) ·
+[**Download**](https://github.com/harshilsureja/open-autofill/releases/latest) ·
+[**Report a bug**](https://github.com/harshilsureja/open-autofill/issues/new?template=bug_report.md)
 
 <br />
 
@@ -51,7 +51,7 @@ Open Autofill remembers them for you. Fill once, save, and replay with a single 
 
 ### Option 1 — Download a release (recommended)
 
-1. Download `open-autofill-vX.Y.Z.zip` from the [latest release](https://github.com/harshil-at/chrome-ext-form-data-manage/releases/latest) and unzip it.
+1. Download `open-autofill-vX.Y.Z.zip` from the [latest release](https://github.com/harshilsureja/open-autofill/releases/latest) and unzip it.
 2. Open `chrome://extensions` and turn on **Developer mode** (top-right).
 3. Click **Load unpacked** and select the unzipped folder.
 4. Pin the extension from the 🧩 menu.
@@ -61,8 +61,8 @@ Open Autofill remembers them for you. Fill once, save, and replay with a single 
 Requires Node.js 20.19+ (22 LTS recommended).
 
 ```bash
-git clone https://github.com/harshil-at/chrome-ext-form-data-manage.git
-cd chrome-ext-form-data-manage
+git clone https://github.com/harshilsureja/open-autofill.git
+cd open-autofill
 npm install
 npm run build
 ```

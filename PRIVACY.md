@@ -41,4 +41,4 @@ Open Autofill makes a network request **only** when you select **randomuser.me**
 
 ## Contact
 
-Questions? Open an issue at <https://github.com/harshil-at/chrome-ext-form-data-manage/issues>.
+Questions? Open an issue at <https://github.com/harshilsureja/open-autofill/issues>.

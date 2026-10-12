@@ -5,8 +5,8 @@ Thanks for helping out! Bug reports, ideas and pull requests are all welcome.
 ## Getting started
 
 ```bash
-git clone https://github.com/harshil-at/chrome-ext-form-data-manage.git
-cd chrome-ext-form-data-manage
+git clone https://github.com/harshilsureja/open-autofill.git
+cd open-autofill
 npm install
 npm run dev
 ```

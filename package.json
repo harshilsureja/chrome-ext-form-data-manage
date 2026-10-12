@@ -37,8 +37,8 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/harshil-at/chrome-ext-form-data-manage.git"
+    "url": "https://github.com/harshilsureja/open-autofill.git"
   },
-  "homepage": "https://harshil-at.github.io/chrome-ext-form-data-manage/",
+  "homepage": "https://harshilsureja.github.io/open-autofill/",
   "private": true
 }
