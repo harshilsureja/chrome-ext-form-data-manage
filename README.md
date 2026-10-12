@@ -96,6 +96,7 @@ npm run dev       # rebuilds dist/ on every save — click reload on chrome://ex
 npm run build     # type-check + production build
 npm run zip       # build and pack release/open-autofill-v<version>.zip
 npm run icons     # re-render PNG icons from assets/logo*.svg
+npm run social    # re-render docs/assets/social-preview.png
 ```
 
 ### Project structure

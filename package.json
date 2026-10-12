@@ -7,7 +7,8 @@
     "build": "tsc --noEmit && vite build",
     "typecheck": "tsc --noEmit",
     "icons": "node scripts/build-icons.mjs",
-    "zip": "npm run build && node scripts/zip.mjs"
+    "zip": "npm run build && node scripts/zip.mjs",
+    "social": "node scripts/build-social.mjs"
   },
   "dependencies": {
     "class-variance-authority": "^0.7.1",
